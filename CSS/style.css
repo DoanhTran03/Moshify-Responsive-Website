@@ -74,3 +74,57 @@ a {
         font-size: 1.5rem;
     }
 }
+/* Badges */
+
+.badge {
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    font-weight: bold;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+}
+
+.badge--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.badge--secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (width-min: 1024px) {
+    .badge {
+        font-size: 1.5rem;
+    }
+    .badge--small {
+        font-size: 1.2rem;
+    }
+}
+/* List */
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-heading);
+}
+.list--inline .list__item {
+    display: inline-block;
+}
+.list--tick {
+    list-style-image: url(../IMAGES/tick.svg);
+    padding-left: 3rem;
+}
+.list--tick .list__item{
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+@media screen and (min-width: 1024px) {
+    .list--tick .list__item {
+        padding-left: 0;
+    }
+}
