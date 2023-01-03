@@ -4,6 +4,8 @@
     --color-accent: #ff3400;
     --color-heading: #1b0760;
     --color-body: #574e73;
+    --color-border: #ccc;
+    --border-radius: 30px;
 }
 *, *::after, *::before {
     box-sizing: border-box;
@@ -157,7 +159,7 @@ a {
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 600;
-    padding: 2rem 15rem;
+    padding: 2rem 3rem;
     text-transform: uppercase;
     white-space: nowrap;
     text-align: center;
@@ -201,6 +203,36 @@ a {
 
 @media screen and (min-width: 1024px) {
     .btn {
+        font-size: 1.5rem;
+    }
+}
+/* Inputs */
+.input {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: var(--color-heading);
+    font-size: 2rem;
+    outline: none;
+    padding: 1.5rem 3.5rem;
+}
+::placeholder {
+    color: #cdcbd7;
+}
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+.input-group .btn {
+    margin: 4px;
+}
+@media screen and (min-width: 1024px){
+    .input {
         font-size: 1.5rem;
     }
 }
