@@ -143,6 +143,13 @@ a {
 .icon--primary {
     fill: var(--color-primary);
 }
+.icon--white {
+    fill: #fff;
+}
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
 .icon-container {
     background-color: #f3f9fa;
     width: 64px;
@@ -152,7 +159,9 @@ a {
     justify-content: center;
     align-items: center;
 }
-
+.icon-container--accent {
+    background-color: var(--color-accent);
+}
 /* Button */
 .btn {
     border-radius: 50px;
@@ -372,5 +381,32 @@ letter-spacing: 1px;
 @media screen and (min-width: 768px) {
     .grid--1x2 {
         grid-template-columns: repeat(2,1fr);
+    }
+}
+/* Testinomial */
+.testinomial {
+    padding: 3rem;
+}
+.testinomial__image {
+    position: relative;
+}
+
+.testinomial__image > img{
+    width: 100%;
+}
+
+.testinomial__image > .icon-container {
+    position: absolute;
+    right: -32px;
+    top: 3rem; 
+}
+
+@media screen and (min-width: 768px) {
+    .testinomial .quote,
+    .testinomial .quote__author{
+        font-size: 2.4rem;
+    }
+    .testinomial .quote {
+        margin-left: 6rem;
     }
 }
