@@ -1,0 +1,15 @@
+<div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Products</h2>
+        <span class="icon-container">
+          <svg class="icon icon--primary collapsible__chevron">
+            <use xlink:href="IMAGES/sprite.svg#chevron"></use>
+          </svg>
+        </span>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa
+        consequatur nemo animi quo sed magnam odit hic ratione? At?
+      </div>
+    </div>
+    <script src="/js/main.js"></script>
