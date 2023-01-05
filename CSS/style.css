@@ -505,3 +505,53 @@ letter-spacing: 1px;
     max-width: 1140px;
     margin: 0 auto;
 }
+/* Navigation Bar */
+.nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    align-items: center;
+}
+.nav__list {
+    margin: 0;
+    width: 100%;
+}
+.nav__item {
+    padding: 0 2rem;
+    border-bottom: 1px solid #222;
+}
+.nav__item > a{
+    transition: color 0.3s;
+    color: #d2d0db;
+}
+.nav__item > a:hover{
+    color: #fff;
+}
+.nav__toggler {
+   opacity: 0.5; 
+   transition: box-shadow .15s;
+}
+.nav.collapsible--expanded .nav__toggler {
+    opacity: 1;
+    box-shadow: 0 0 0 3px #666;
+    border-radius: 5px;
+}
+.nav__brand {
+    transform: translateY(5px);
+}
+
+@media screen and (min-width: 1024px) {
+    .nav__toggler {
+        display: none;
+    }
+    .nav__list {
+        width: auto;
+       display: flex;
+       font-size: 1.6rem; 
+       max-height: 100%;
+       opacity: 1;
+    }
+
+}
