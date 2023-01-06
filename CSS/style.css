@@ -164,6 +164,12 @@ a {
     background-color: var(--color-accent);
 }
 /* Button */
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
 .btn {
     border-radius: 50px;
     border: 0;
@@ -243,7 +249,7 @@ padding-right: 6rem;
 .input-group .input {
     border: 0;
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 .input-group .btn {
     margin: 4px;
@@ -576,5 +582,28 @@ letter-spacing: 1px;
     .hero__content {
         text-align: left;
         align-self: center;
+    }
+}
+/* Domain Block */
+.block-domain .input-group {
+    box-shadow: 0 0 30px 20px #e6eeeb;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+.block-domain-prices {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,6rem);
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 700px;
+    justify-items: center;
+} 
+@media screen and (min-width: 768px) {
+    .block-domain-prices {
+       display: flex;
+       justify-content: space-evenly;
+       margin: 0 auto;
     }
 }
