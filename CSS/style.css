@@ -486,7 +486,6 @@ letter-spacing: 1px;
 .block {
     --padding-vertical: 6rem;
     padding: var(--padding-vertical) 2rem;
-    border: 2px solid red;
 }
 .block__header {
     text-align: center;
@@ -605,5 +604,26 @@ letter-spacing: 1px;
        display: flex;
        justify-content: space-evenly;
        margin: 0 auto;
+    }
+}
+/* Feature */
+.feature {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+.feature__image {
+    width: 100%;
+}
+.feature__heading {
+    margin: 1rem 0;
+}
+
+.feature:first-of-type {
+    margin-top: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
     }
 }
